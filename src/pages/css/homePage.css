@@ -1,0 +1,42 @@
+.link-hover {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .link-hover:hover {
+    color: #00c6ff !important;
+    transform: translateX(5px);
+  }
+
+  
+  .card-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7; /* Keep the original image visibility */
+  }
+  
+  /* Adding a dark overlay */
+  .card-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.244); /* Dark overlay */
+  }
+  
+  /* Ensuring text is readable */
+  .card-body {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    backdrop-filter: blur(4px); /* Soft blur effect */
+    color: white; /* Ensure text remains visible */
+  }
+    

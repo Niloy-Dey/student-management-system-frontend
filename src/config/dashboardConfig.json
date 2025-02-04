@@ -1,0 +1,51 @@
+{
+  "student": {
+    "dashboardTitle": "Student Dashboard",
+    "menuItems": [
+      { "path": "/student-dashboard", "label": "Dashboard" },
+      { "path": "/student-dashboard/problem-submission", "label": "Problem Submission" },
+      { "path": "/student-dashboard/meeting-attendance", "label": "Meeting Attendance" },
+      { "path": "/student-dashboard/leaderboard", "label": "Leaderboard" }
+    ]
+  },
+  "teamLeader": {
+    "dashboardTitle": "Team Leader Dashboard",
+    "menuItems": [
+      { "path": "/team-leader/dashboard", "label": "Dashboard" },
+      { "path": "/team-leader/team-progress", "label": "Team Progress" },
+      { "path": "/team-leader/upcoming-deadlines", "label": "Upcoming Deadlines" },
+      { "path": "/team-leader/weekly-summaries", "label": "Weekly Summaries" }
+    ]
+  },
+  "advisor": {
+    "dashboardTitle": "Advisor Dashboard",
+    "menuItems": [
+      { "path": "/advisor-dashboard", "label": "Dashboard" },
+      { "path": "/advisor-dashboard/team-management", "label": "Team Management" },
+      { "path": "/advisor-dashboard/student-progress", "label": "Student Progress" },
+      { "path": "/advisor-dashboard/meeting-scheduler", "label": "Meeting Scheduler" },
+      { "path": "/advisor-dashboard/notifications", "label": "Notifications" }
+    ]
+  },
+  "admin": {
+    "dashboardTitle": "Admin Dashboard",
+    "menuItems": [
+      { "path": "/admin/dashboard", "label": "Dashboard" },
+      { "path": "/admin/user-management", "label": "User Management" },
+      { "path": "/admin/user-management/user-list", "label": "User List" },
+      
+      { "path": "/admin/user-management/edit-user", "label": "Edit User" },
+      { "path": "/admin/user-management/assign-role", "label": "Assign Role" },
+      { "path": "/admin/user-management/delete-user", "label": "Delete User" },
+      { "path": "/admin/batch-management", "label": "Batch Management" },
+      { "path": "/admin/semester-management", "label": "Semester Management" },
+      { "path": "/admin/course-management", "label": "Course Management" },
+      { "path": "/admin/course-details", "label": "Course Details" },
+      { "path": "/admin/student-management", "label": "Student Management" },
+      { "path": "/admin/student-management/student-list", "label": "Student List" },
+      { "path": "/admin/student-management/add-student", "label": "Add Student" },
+      { "path": "/admin/student-management/student-profile", "label": "Student Profile" },
+      { "path": "/admin/system-settings", "label": "System Settings" }
+    ]
+  }
+}

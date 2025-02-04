@@ -1,0 +1,32 @@
+.team-leader-sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    position: fixed;
+    padding-top: 20px;
+}
+
+.sidebar-nav {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-nav li {
+    margin: 15px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar-nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+.sidebar-nav li a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+    padding: 10px;
+}

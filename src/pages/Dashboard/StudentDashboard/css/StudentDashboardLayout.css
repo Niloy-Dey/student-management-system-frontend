@@ -1,0 +1,149 @@
+/* src/pages/Dashboard/StudentDashboard/StudentDashboardLayout.css */
+
+
+
+/* General Dashboard Layout */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.dashboard-sidebar {
+  width: 250px;
+  background-color: #343a40; /* Dark gray for uniformity */
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ensure content stays at the top */
+}
+
+.sidebar-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffc107; /* Highlight color */
+}
+
+.dashboard-sidebar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dashboard-sidebar-nav li {
+  margin-bottom: 15px;
+}
+
+.dashboard-sidebar-nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dashboard-sidebar-nav li a:hover {
+  background-color: #495057; /* Slightly lighter gray for hover */
+  color: #ffc107; /* Highlight hover color */
+}
+
+/* Main Content Area */
+.dashboard-main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  overflow-y: auto;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+}
+
+
+/* src/pages/Dashboard/Admin/css/AdminDashboardLayout.css */
+
+.admin-dashboard-container {
+  display: flex;
+  height: 100vh; /* Full height of the viewport */
+}
+
+.admin-dashboard-sidebar {
+  width: 250px;
+  background-color: #343a40;
+  color: white;
+  padding-top: 20px;
+  position: fixed;
+  height: 100%; /* Ensure the sidebar takes up full height */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  z-index: 1000;
+}
+
+.dashboard-sidebar-nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dashboard-sidebar-nav li {
+  margin-bottom: 10px;
+}
+
+.dashboard-sidebar-nav a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-sidebar-nav a:hover,
+.dashboard-sidebar-nav a.active-link {
+  /* background-color: #007bff; */
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.dashboard-main-content {
+  margin-left: 250px; /* Make room for the sidebar */
+  padding: 20px;
+  overflow-y: auto; /* Enable vertical scrolling for the main content */
+  height: 100vh; /* Ensure the main content section takes up full height */
+}
+
+.student-dropdown-list {
+  list-style-type: none;
+  padding-left: 20px;
+  /* background-color: #f8f9fa; */
+  border-radius: 4px;
+  position: absolute;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.student-dropdown-list li {
+  padding: 5px 0;
+}
+
+.student-dropdown-list a {
+  color: #343a40;
+  text-decoration: none;
+}
+
+.student-dropdown-list a:hover {
+  /* background-color: #007bff; */
+  color: white;
+}
+
+/* Add a custom scrollbar for better visual appearance */
+.dashboard-main-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dashboard-main-content::-webkit-scrollbar-thumb {
+  /* background-color: #007bff; */
+  border-radius: 4px;
+}
+
+.dashboard-main-content::-webkit-scrollbar-track {
+  /* background-color: #f1f1f1; */
+}
