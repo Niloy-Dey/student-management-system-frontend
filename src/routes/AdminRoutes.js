@@ -49,7 +49,7 @@ const AdminRoutes = () => {
         <Route path="user-management" element={<UserManagementDashboard />} />  {/* Main Dashboard */}
         <Route path="user-management/user-list" element={<AdminUserManagementPage />} />  {/* List of all users */}
         <Route path="user-management/create-user" element={<CreateUserPage />} />  {/* Create a new user */}
-        <Route path="user-management/edit-use/:userId" element={<EditUserPage />} />  {/* Edit user by ID */}
+        <Route path="user-management/edit-use/:userId" element={<EditUserPage />} />  Edit user by ID
         <Route path="user-management/user-profile/:userId" element={<UserProfilePage />} />  {/* View user profile */}
         <Route path="user-management/assign-role/:userId" element={<RoleManagementPage />} />  Assign role to user
         <Route path="user-management/delete-user/:userId" element={<DeleteUserPage />} />  {/* Delete user by ID */}
@@ -114,7 +114,7 @@ const AdminRoutes = () => {
 
         {/* Student Management */}
         <Route path="student-management" element={<StudentList />} />
-        <Route path="student-management/student-list" element={<StudentList />} />
+        {/* <Route path="student-management/student-list" element={<StudentList />} /> */}
         <Route path="student-management/add-student" element={<CreateStudent />} />
         <Route path="student-management/student-profile/:studentId" element={<StudentProfile />} />
         <Route path="/student-management/student-profile/:studentId" component={StudentProfile} />

@@ -31,6 +31,7 @@ import StudentProgressPage from "../pages/Dashboard/AdvisorDashboard/StudentProg
 import MeetingSchedulerPage from "../pages/Dashboard/AdvisorDashboard/MeetingSchedulerPage";
 import NotificationsPage from "../pages/Dashboard/AdvisorDashboard/NotificationsPage";
 import ProfilePage from "../pages/CommonPages/Profile";
+import AllStudentLeaderBoard from "../pages/CommonPages/AllStudentLeaderBoard";
 
 console.log("HI from 10 RoutesComp");
 
@@ -44,6 +45,7 @@ const router = createBrowserRouter(
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/allStudentLeader" element={<AllStudentLeaderBoard />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
 

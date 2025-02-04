@@ -61,7 +61,7 @@ const DashboardSidebar = ({ userRole, isSidebarOpen }) => {
 
     return (
         <div
-            className={`d-flex  flex-column mt-4 pt-4 p-3 bg-dark text-white sidebar ${isSidebarOpen ? "expanded" : "collapsed"} overflow-auto`}
+            className={`d-flex flex-column mt-4 pt-4 p-3 bg-dark text-white sidebar ${isSidebarOpen ? "expanded" : "collapsed"}`}
             style={{
                 height: "100vh",
                 width: isSidebarOpen ? "260px" : "80px",
@@ -72,8 +72,19 @@ const DashboardSidebar = ({ userRole, isSidebarOpen }) => {
                 top: "0",
                 left: "0",
                 zIndex: "1000",
+                overflowY: "auto", // Allow scrolling
+                overflowX: "hidden", // Prevent horizontal scrolling
+                scrollbarWidth: "none", // Hide scrollbar for Firefox
             }}
         >
+            {/* Hide scrollbar for WebKit browsers (Chrome, Safari) */}
+            <style>
+                {`
+            .sidebar::-webkit-scrollbar {
+                display: none;
+            }
+        `}
+            </style>
             {/* Sidebar Menu */}
             <ListGroup className="mt-5 pt-5" variant="flush">
                 {menuItems.length > 0 ? (
@@ -83,8 +94,8 @@ const DashboardSidebar = ({ userRole, isSidebarOpen }) => {
                             active={location.pathname === item.path}
                             className="border-0 d-flex align-items-center"
                             style={{
-                                backgroundColor: location.pathname === item.path ? "#0d6efd" : "transparent",
-                                color: location.pathname === item.path ? "white" : "#bbb",
+                                backgroundColor: location.pathname === item.path ? "white" : "transparent",
+                                color: location.pathname === item.path ? "black" : "#bbb",
                                 fontSize: "16px",
                                 fontWeight: "500",
                                 borderRadius: "8px",
@@ -100,7 +111,7 @@ const DashboardSidebar = ({ userRole, isSidebarOpen }) => {
                                 to={item.path}
                                 className="d-flex align-items-center text-decoration-none w-100"
                                 style={{
-                                    color: location.pathname === item.path ? "white" : "#ccc",
+                                    color: location.pathname === item.path ? "black" : "#ccc",
                                     fontSize: "16px",
                                     fontWeight: "bold",
                                     borderRadius: "5px",
@@ -115,6 +126,7 @@ const DashboardSidebar = ({ userRole, isSidebarOpen }) => {
                                 {isSidebarOpen && item.label}
                             </Link>
                         </ListGroup.Item>
+
                     ))
                 ) : (
                     <ListGroup.Item className="text-center bg-dark text-white border-0">
@@ -123,6 +135,7 @@ const DashboardSidebar = ({ userRole, isSidebarOpen }) => {
                 )}
             </ListGroup>
         </div>
+
     );
 };
 

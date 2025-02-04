@@ -34,16 +34,10 @@
       { "path": "/admin/user-management", "label": "User Management" },
       { "path": "/admin/user-management/user-list", "label": "User List" },
       
-      { "path": "/admin/user-management/edit-user", "label": "Edit User" },
-      { "path": "/admin/user-management/assign-role", "label": "Assign Role" },
-      { "path": "/admin/user-management/delete-user", "label": "Delete User" },
       { "path": "/admin/batch-management", "label": "Batch Management" },
       { "path": "/admin/semester-management", "label": "Semester Management" },
       { "path": "/admin/course-management", "label": "Course Management" },
-      { "path": "/admin/course-details", "label": "Course Details" },
       { "path": "/admin/student-management", "label": "Student Management" },
-      { "path": "/admin/student-management/student-list", "label": "Student List" },
-      { "path": "/admin/student-management/add-student", "label": "Add Student" },
       { "path": "/admin/student-management/student-profile", "label": "Student Profile" },
       { "path": "/admin/system-settings", "label": "System Settings" }
     ]

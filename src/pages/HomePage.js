@@ -18,7 +18,7 @@ const HomePage = () => {
             <Link to="/profile">
               <Button variant="light" className="mx-2">View Profile</Button>
             </Link>
-            <Link to="/leaderboard">
+            <Link to="/allStudentLeader">
               <Button variant="outline-light" className="mx-2">Leaderboard</Button>
             </Link>
             <Link to="/meetings" className='pb-5'>
@@ -63,7 +63,7 @@ const HomePage = () => {
                   <Card.Text className="mb-3 fw-bold">
                     Stay motivated by tracking top performers in real-time.
                   </Card.Text>
-                  <Link to="/leaderboard">
+                  <Link to="/allStudentLeader">
                     <Button variant="light" className="fw-bold">View Leaderboard</Button>
                   </Link>
                 </Card.Body>
